@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java script - Assignment 1</title>
+
+    <meta name="discription" content="">
+    <meta name="keywords" content="">
+    <meta name="Auther" content="Mohamed Elsayed">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- As a link -->
+<nav class="navbar sticky-top navbar-dark" style="background-color: #00bcd4;">
+        <a class="navbar-brand" href="index.html">
+            <i class="fab fa-js-square fa-lg d-inline-block align-top"></i>
+            javascript
+          </a>
+  </nav>
+  </nav>
+    <section class="page">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, Route!</h1>
+            <p class="lead">This is a simple hero design, a simple assignment-style component for calling extra attention to solve Questions.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#assignment" role="button">Check Assignment</a>
+        </div>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-7">
+                        <div class="row">
+                                <div class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <a class="nav-link active" id="pills-assign1-tab" data-toggle="pill" href="#pills-assign1"
+                                        role="tab" aria-controls="pills-assign1" aria-selected="true">Assign 1</a>
+                                    <a class="nav-link" id="pills-assign2-tab" data-toggle="pill" href="#pills-assign2"
+                                        role="tab" aria-controls="pills-assign2" aria-selected="false">Assign 2</a>
+                                    <a class="nav-link" id="pills-assign3-tab" data-toggle="pill"
+                                        href="#pills-assign3" role="tab" aria-controls="pills-assign3"
+                                        aria-selected="false">Assign 3</a>
+                                    <a class="nav-link" id="pills-assign4-tab" data-toggle="pill"
+                                        href="#pills-assign4" role="tab" aria-controls="pills-assign4"
+                                        aria-selected="false">Assign 4</a>
+                                    <a class="nav-link" id="pills-assign5-tab" data-toggle="pill"
+                                        href="#pills-assign5" role="tab" aria-controls="pills-assign5"
+                                        aria-selected="false">Assign 5</a>
+                                    <a class="nav-link" id="pills-assign6-tab" data-toggle="pill"
+                                        href="#pills-assign6" role="tab" aria-controls="pills-assign6"
+                                        aria-selected="false">Assign 6</a>
+                                    <a class="nav-link" id="pills-assign7-tab" data-toggle="pill"
+                                        href="#pills-assign7" role="tab" aria-controls="pills-assign7"
+                                        aria-selected="false">Assign 7</a>
+                                    <a class="nav-link" id="pills-assign8-tab" data-toggle="pill"
+                                        href="#pills-assign8" role="tab" aria-controls="pills-assign8"
+                                        aria-selected="false">Assign 8</a>
+                                    <a class="nav-link" id="pills-assign9-tab" data-toggle="pill"
+                                        href="#pills-assign9" role="tab" aria-controls="pills-assign9"
+                                        aria-selected="false">Assign 9</a>
+                                    <a class="nav-link" id="pills-assign10-tab" data-toggle="pill"
+                                        href="#pills-assign10" role="tab" aria-controls="pills-assign10"
+                                        aria-selected="false">Assign 10</a>
+                                    <a class="nav-link" id="pills-assign11-tab" data-toggle="pill"
+                                        href="#pills-assign11" role="tab" aria-controls="pills-assign11"
+                                        aria-selected="false">Assign 11</a>
+                                </div>
+
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-assign1" role="tabpanel"
+                                        aria-labelledby="pills-assign1-tab">
+                                        <p class="lead">Write a Program that allow to user enter number then print it.</p>
+                                        <button id="assignment" onclick="assignOne();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign2" role="tabpanel"
+                                        aria-labelledby="pills-assign2-tab">
+                                        <p class="lead">Write a program that take number form user then print yesy if that number can divide by 3 and 4 otherwise print no.</p>
+                                        <button onclick="assignTwo();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign3" role="tabpanel"
+                                        aria-labelledby="pills-assign3-tab">
+                                        <p class="lead">Write a program that allows the user to insert 2 intgers then print the max.</p>
+                                        <button onclick="assignThree();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign4" role="tabpanel"
+                                        aria-labelledby="pills-assign4-tab">
+                                        <p class="lead">Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.</p>
+                                        <button onclick="assignFour();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign5" role="tabpanel"
+                                        aria-labelledby="pills-assign5-tab">
+                                        <p class="lead">Write a program that that take 3 inegers from user then print the max element and the min element.</p>
+                                        <button onclick="assignFive();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign6" role="tabpanel"
+                                        aria-labelledby="pills-assign6-tab">
+                                        <p class="lead">Write a program that allows the user to insert integer number then check if a number is even or odd.</p>
+                                        <button onclick="assignSix();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign7" role="tabpanel"
+                                        aria-labelledby="pills-assign7-tab">
+                                        <p class="lead">Write a program that take character from user then if it is vowel chars (a,e,i,o,u) then print vowel otherwise print consonant.</p>
+                                        <button onclick="assignSeven();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign8" role="tabpanel"
+                                        aria-labelledby="pills-assign8-tab">
+                                        <p class="lead">Write a program that allows user to insert integer then print al number between 1 to that's number.</p>
+                                        <button onclick="assignEight();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign9" role="tabpanel"
+                                        aria-labelledby="pills-assign9-tab">
+                                        <p class="lead">Write a program that allows user to insert integer then print a multiplication table up to 12.</p>
+                                        <button onclick="assignNine();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign10" role="tabpanel"
+                                        aria-labelledby="pills-assign10-tab">
+                                        <p class="lead">Write a program that allows to user to insert number then print all even number between 1 to this number.</p>
+                                        <button onclick="assignTen();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-assign11" role="tabpanel"
+                                        aria-labelledby="pills-assign11-tab">
+                                        <p class="lead">Write a program that take two integers then print the power.</p>
+                                        <button onclick="assignEleven();" class="btn btn-dark">Try it!</button>
+                                    </div>
+                                </div>
+                        </div>
+    
+                </div>
+                <div class="col-md-5">
+                    <h1 class="r-title">javascript Assignment Result:</h1>
+                    <hr>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- javascript files   -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js-main.js"></script>
+</body>
+</html>
