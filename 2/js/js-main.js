@@ -1,117 +1,92 @@
-var resultArea = document.getElementById("result");
+var resultArea = document.getElementById("result"),
+cylinder = {
+    height : 2,
+    diameter :2,
+    volume: function(){
+        return 3.14*(this.diameter*this.diameter)*this.height
+    }
+},
+object = {
+    name: "Mohamed",
+    age: 15,
+    country:"Egypt"
+};
 //assignemnt One
 
 function assignOne(){
     resultArea.innerHTML = " ";
-    var value = Number(prompt("Pleas Enter Any Number?"));
-    resultArea.innerHTML = "The Number is : <strong>"+value+"</strong>";
+    var input = prompt("Pleas Enter Any Number?"),value;
+    if(input[0] === '[' && input[input.length - 1] === ']'){
+        value = true;
+    }
+    else{
+        value =false;
+    }
+    resultArea.innerHTML = "your input is  : <strong>"+value+"</strong>";
 }
 
 // assignment Two
 
 function assignTwo(){
     resultArea.innerHTML = " ";
-    var value = Number(prompt("Pleas Enter Any Number?"));
-    if(value%3 == 0 && value%4==0){
-        resultArea.innerHTML = "Result: <strong>Yes</strong>";
-    }
-    else{
-        resultArea.innerHTML = "Result: <strong>No</strong>";
-    }
+    var today = new Date();
+    value = today.getDate() + "/" + (today.getMonth()+1) + "/" + today.getFullYear();
+        resultArea.innerHTML = "Result: <strong>"+value+"</strong>";
 }
 
 //assignment Three
 
 function assignThree(){
     resultArea.innerHTML = " ";
-    var firstNumber = Number(prompt("Pleas Enter First Number?"));
-    var secondNumber = Number(prompt("Pleas Enter Second Number?"));
-    if(firstNumber>secondNumber){
-        resultArea.innerHTML = "Your numbers are "+firstNumber+" , "+secondNumber+"<br>The Result of the max is: <strong>"+firstNumber+"</strong>";
+    var value = prompt("Please Enter your date?");
+    var userDate = new Date(value);
+    if(userDate.getDay() == 5 || userDate.getDay() == 6){
+        resultArea.innerHTML = "Your date is <strong>Weekend</strong>";
     }
     else{
-        resultArea.innerHTML = "Your numbers are "+firstNumber+" , "+secondNumber+"<br>The Result of the max is: <strong>"+secondNumber+"</strong>";
+        resultArea.innerHTML = "Your date is <strong>Go to work</strong>";
     }
 }
 
 //assignment four
 
 function assignFour(){
-    resultArea.innerHTML = " ";
-    var value = Number(prompt("Pleas Enter an integer Number?"));
-    if(value<0){
-        resultArea.innerHTML = "Your numbers is:"+" <strong>Negative</strong>";
-    }
-    else{
-        resultArea.innerHTML = "Your numbers is:"+" <strong>Positive</strong>";
-    }
+    resultArea.innerHTML = "";  
 }
 
 //assignment five
 
 function assignFive(){
     resultArea.innerHTML = " ";
-    var firstNumber = Number(prompt("Pleas Enter First Number?"));
-    var secondNumber = Number(prompt("Pleas Enter Second Number?"));
-    var thirdNumber = Number(prompt("Pleas Enter Third Number?"));
-    var max,min;
-    if(firstNumber>secondNumber){
-        min = secondNumber;
-        if(firstNumber>thirdNumber){
-            max =firstNumber;
-            if(secondNumber>thirdNumber){
-                min=thirdNumber;
-            }
-            else{
-                min = secondNumber;
-            }
-        }
-        else{
-            max = thirdNumber;
-        }
-    }
-    else{
-        min = firstNumber;
-        if(secondNumber>thirdNumber){
-            max = secondNumber;
-            if(firstNumber>thirdNumber){
-                min=thirdNumber;
-            }
-            else{
-                min = firstNumber;
-            }
-        }
-        else{
-            max = thirdNumber;
-        }
-    }
-    resultArea.innerHTML = "Your max Nummber is:"+" <strong>"+max+"</strong><br>" + 
-                            "Your min Nummber is:"+" <strong>"+min+"</strong>";
+    var h = prompt("Enter the height of cylinder");
+    var d = prompt("Enter the diameter of cylinder");
+    cylinder.height = h;
+    cylinder.diameter = d;
+    resultArea.innerHTML = "The Volume of cylinder is : <strong>"+cylinder.volume()+"</strong>";
 }
 
 // assignment six
 
 function assignSix(){
     resultArea.innerHTML = " ";
-    var value = Number(prompt("Pleas Enter Your Number?"));
-    if(value%2==0){
-        resultArea.innerHTML = "Your Nummber "+value+" is: <strong>even</strong>";
+    var property = "";
+    for(prop in object){
+        property += " "+ object[prop];
     }
-    else{
-        resultArea.innerHTML = "Your Nummber "+value+" is: <strong>odd</strong>";
-    }
+    resultArea.innerHTML = "Your object is : <strong>"+property+"</strong>";
 }
 
 //assignment seven
 
 function assignSeven(){
     resultArea.innerHTML = " ";
-    var char = prompt("Pleas Enter alphabet character?");
-    if(char == 'a' || char == 'e' || char == 'i' || char == 'o' ||char == 'u'){
-        resultArea.innerHTML = "Your Alphabet Character '"+char.toUpperCase()+"' is: <strong>Vowel</strong>";
-    }
-    else{
-        resultArea.innerHTML = "Your Alphabet Character '"+char.toUpperCase()+"' is: <strong>Consonant</strong>";
+    var a =[[2,4,2,1],[8,11,9,4],[7,0,7,27],[7,4,28,14],[3,10,26,7]];
+    for(i=0;i<(a.length);i++){
+        resultArea.innerHTML+= "row "+i+"<br>";
+        for(j=0;j<a[i].length;j++){
+            resultArea.innerHTML+= " "+ a[i][j];
+        }
+        resultArea.innerHTML+="<br>";
     }
 }
 
