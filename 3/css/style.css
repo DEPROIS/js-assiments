@@ -1,0 +1,26 @@
+/*
+Auther: Mohamed Elsayed
+Theme Name: Bookmarker
+
+first color:
+second color:
+*/
+/*start first section*/
+.app .header ,
+.app .dataStyle{
+    border-bottom: 1px solid #9b9b9b;
+}
+.app .header .appTitle,
+.app .footer .appTitle{
+    color: #AAA;
+    margin-left: 1rem;
+}
+.app .appData{
+    background-color: #efecec;
+}
+.app .appData .appForm{
+    width: 80%;
+}
+.app .dataShow{
+    background:linear-gradient(to bottom, #efecec 0%,#ffffff 100%);
+}
