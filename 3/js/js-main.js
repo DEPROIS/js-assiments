@@ -23,10 +23,13 @@ var siteName = document.getElementById("siteName"),
     nameValidate.style.display = "none";
     urlValidate.style.display = "none";
     //get data from local storage
-    var getstore = localStorage.getItem("bookmark");
-    dataparsing = JSON.parse(getstore);
-    bookmarkArray=dataparsing;
-    bookmarkShow();
+    
+    if(localStorage.getItem("bookmark") !== null){
+        var getstore = localStorage.getItem("bookmark");
+        dataparsing = JSON.parse(getstore);
+        bookmarkArray=dataparsing;
+        bookmarkShow();
+    }
 })();
 
 //Statment function cheeck the bookmark site name value
